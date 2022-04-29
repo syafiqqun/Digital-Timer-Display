@@ -1,0 +1,549 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://digital_watch/DisplayBitIntegrated.gd" type="Script" id=1]
+[ext_resource path="res://digital_watch/DigitalWatch.gd" type="Script" id=2]
+[ext_resource path="res://sound/thuing.ogg" type="AudioStream" id=3]
+
+[node name="DigitalWatch" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+volume_db = -14.0
+
+[node name="SeperatorContainer" type="Node" parent="."]
+
+[node name="SeparatorBottom" type="ColorRect" parent="SeperatorContainer"]
+margin_left = 352.0
+margin_top = 280.0
+margin_right = 376.0
+margin_bottom = 320.0
+color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
+
+[node name="SeparatorBottom2" type="ColorRect" parent="SeperatorContainer"]
+margin_left = 632.0
+margin_top = 280.0
+margin_right = 656.0
+margin_bottom = 320.0
+color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
+
+[node name="Separator" type="ColorRect" parent="SeperatorContainer"]
+margin_left = 632.0
+margin_top = 208.0
+margin_right = 656.0
+margin_bottom = 248.0
+color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Separator2" type="ColorRect" parent="SeperatorContainer"]
+margin_left = 352.0
+margin_top = 208.0
+margin_right = 376.0
+margin_bottom = 248.0
+color = Color( 0.0901961, 0.0901961, 0.0901961, 1 )
+
+[node name="DsiplayBit1" type="Node2D" parent="."]
+position = Vector2( 840, 264 )
+rotation = 1.5708
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Top" type="ColorRect" parent="DsiplayBit1"]
+margin_left = -88.0
+margin_top = -32.0
+margin_right = -72.0
+margin_bottom = 32.0
+
+[node name="Mid" type="ColorRect" parent="DsiplayBit1"]
+margin_left = -8.0
+margin_top = -32.0
+margin_right = 8.0
+margin_bottom = 32.0
+
+[node name="Bot" type="ColorRect" parent="DsiplayBit1"]
+margin_left = 72.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopLeft" type="ColorRect" parent="DsiplayBit1"]
+margin_left = -8.0
+margin_top = 32.0
+margin_right = 8.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+
+[node name="TopRight" type="ColorRect" parent="DsiplayBit1"]
+margin_left = -8.0
+margin_top = -48.0
+margin_right = 8.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotLeft" type="ColorRect" parent="DsiplayBit1"]
+margin_left = 72.0
+margin_top = 32.0
+margin_right = 88.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotRight" type="ColorRect" parent="DsiplayBit1"]
+margin_left = 72.0
+margin_top = -48.0
+margin_right = 88.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DsiplayBit2" type="Node2D" parent="."]
+position = Vector2( 728, 264 )
+rotation = 1.5708
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Top" type="ColorRect" parent="DsiplayBit2"]
+margin_left = -88.0
+margin_top = -32.0
+margin_right = -72.0
+margin_bottom = 32.0
+
+[node name="Mid" type="ColorRect" parent="DsiplayBit2"]
+margin_left = -8.0
+margin_top = -32.0
+margin_right = 8.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bot" type="ColorRect" parent="DsiplayBit2"]
+margin_left = 72.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopLeft" type="ColorRect" parent="DsiplayBit2"]
+margin_left = -8.0
+margin_top = 32.0
+margin_right = 8.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopRight" type="ColorRect" parent="DsiplayBit2"]
+margin_left = -8.0
+margin_top = -48.0
+margin_right = 8.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotLeft" type="ColorRect" parent="DsiplayBit2"]
+margin_left = 72.0
+margin_top = 32.0
+margin_right = 88.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotRight" type="ColorRect" parent="DsiplayBit2"]
+margin_left = 72.0
+margin_top = -48.0
+margin_right = 88.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DsiplayBit3" type="Node2D" parent="."]
+position = Vector2( 560, 264 )
+rotation = 1.5708
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Top" type="ColorRect" parent="DsiplayBit3"]
+margin_left = -88.0
+margin_top = -32.0
+margin_right = -72.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mid" type="ColorRect" parent="DsiplayBit3"]
+margin_left = -8.0
+margin_top = -32.0
+margin_right = 8.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bot" type="ColorRect" parent="DsiplayBit3"]
+margin_left = 72.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopLeft" type="ColorRect" parent="DsiplayBit3"]
+margin_left = -8.0
+margin_top = 32.0
+margin_right = 8.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopRight" type="ColorRect" parent="DsiplayBit3"]
+margin_left = -8.0
+margin_top = -48.0
+margin_right = 8.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotLeft" type="ColorRect" parent="DsiplayBit3"]
+margin_left = 72.0
+margin_top = 32.0
+margin_right = 88.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotRight" type="ColorRect" parent="DsiplayBit3"]
+margin_left = 72.0
+margin_top = -48.0
+margin_right = 88.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DsiplayBit4" type="Node2D" parent="."]
+position = Vector2( 448, 264 )
+rotation = 1.5708
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Top" type="ColorRect" parent="DsiplayBit4"]
+margin_left = -88.0
+margin_top = -32.0
+margin_right = -72.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mid" type="ColorRect" parent="DsiplayBit4"]
+margin_left = -8.0
+margin_top = -32.0
+margin_right = 8.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bot" type="ColorRect" parent="DsiplayBit4"]
+margin_left = 72.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopLeft" type="ColorRect" parent="DsiplayBit4"]
+margin_left = -8.0
+margin_top = 32.0
+margin_right = 8.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopRight" type="ColorRect" parent="DsiplayBit4"]
+margin_left = -8.0
+margin_top = -48.0
+margin_right = 8.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotLeft" type="ColorRect" parent="DsiplayBit4"]
+margin_left = 72.0
+margin_top = 32.0
+margin_right = 88.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotRight" type="ColorRect" parent="DsiplayBit4"]
+margin_left = 72.0
+margin_top = -48.0
+margin_right = 88.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DsiplayBit5" type="Node2D" parent="."]
+position = Vector2( 280, 264 )
+rotation = 1.5708
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Top" type="ColorRect" parent="DsiplayBit5"]
+margin_left = -88.0
+margin_top = -32.0
+margin_right = -72.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mid" type="ColorRect" parent="DsiplayBit5"]
+margin_left = -8.0
+margin_top = -32.0
+margin_right = 8.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bot" type="ColorRect" parent="DsiplayBit5"]
+margin_left = 72.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopLeft" type="ColorRect" parent="DsiplayBit5"]
+margin_left = -8.0
+margin_top = 32.0
+margin_right = 8.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopRight" type="ColorRect" parent="DsiplayBit5"]
+margin_left = -8.0
+margin_top = -48.0
+margin_right = 8.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotLeft" type="ColorRect" parent="DsiplayBit5"]
+margin_left = 72.0
+margin_top = 32.0
+margin_right = 88.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotRight" type="ColorRect" parent="DsiplayBit5"]
+margin_left = 72.0
+margin_top = -48.0
+margin_right = 88.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DsiplayBit6" type="Node2D" parent="."]
+position = Vector2( 168, 264 )
+rotation = 1.5708
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Top" type="ColorRect" parent="DsiplayBit6"]
+margin_left = -88.0
+margin_top = -32.0
+margin_right = -72.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Mid" type="ColorRect" parent="DsiplayBit6"]
+margin_left = -8.0
+margin_top = -32.0
+margin_right = 8.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Bot" type="ColorRect" parent="DsiplayBit6"]
+margin_left = 72.0
+margin_top = -32.0
+margin_right = 88.0
+margin_bottom = 32.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopLeft" type="ColorRect" parent="DsiplayBit6"]
+margin_left = -8.0
+margin_top = 32.0
+margin_right = 8.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopRight" type="ColorRect" parent="DsiplayBit6"]
+margin_left = -8.0
+margin_top = -48.0
+margin_right = 8.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotLeft" type="ColorRect" parent="DsiplayBit6"]
+margin_left = 72.0
+margin_top = 32.0
+margin_right = 88.0
+margin_bottom = 96.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BotRight" type="ColorRect" parent="DsiplayBit6"]
+margin_left = 72.0
+margin_top = -48.0
+margin_right = 88.0
+margin_bottom = 16.0
+rect_rotation = 90.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StartButton" type="Button" parent="."]
+margin_left = 368.0
+margin_top = 424.0
+margin_right = 453.0
+margin_bottom = 444.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "START"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResetButton" type="Button" parent="."]
+margin_left = 528.0
+margin_top = 424.0
+margin_right = 613.0
+margin_bottom = 444.0
+rect_scale = Vector2( 1.5, 1.5 )
+text = "RESET"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 376.0
+margin_top = 32.0
+margin_right = 509.0
+margin_bottom = 46.0
+rect_scale = Vector2( 2, 2 )
+text = "Digital Timer Display"
+
+[node name="OptionButton" type="OptionButton" parent="."]
+margin_left = 888.0
+margin_top = 560.0
+margin_right = 992.0
+margin_bottom = 580.0
+text = "60ms"
+items = [ "60ms", null, false, 0, null, "30ms", null, false, 1, null, "15ms", null, false, 2, null, "1ms", null, false, 3, null ]
+selected = 0
+
+[node name="Label" type="Label" parent="OptionButton"]
+margin_left = 20.0
+margin_top = -16.0
+margin_right = 90.0
+margin_bottom = -2.0
+text = "SPEED MS"
+
+[node name="VSlider" type="VSlider" parent="."]
+margin_left = 992.0
+margin_top = 272.0
+margin_right = 1008.0
+margin_bottom = 520.0
+min_value = -30.0
+max_value = 0.0
+value = -14.0
+
+[node name="Label" type="Label" parent="VSlider"]
+margin_top = 256.0
+margin_right = 22.0
+margin_bottom = 270.0
+text = "SFX"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="pressed" from="ResetButton" to="." method="_on_ResetButton_pressed"]
+[connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="value_changed" from="VSlider" to="." method="_on_VSlider_value_changed"]
